@@ -8430,3 +8430,9 @@ java.io.FileNotFoundException: C:\Users\kunal\STM32\0_LED_TOGGLE\Debug\0_LED_TOG
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-06-29 14:55:10.411
+!MESSAGE Indexed '1_LED_TOGGLE' (3 sources, 53 headers) in 0.447 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-06-29 14:57:09.656
+!MESSAGE Indexed '1_LED_TOGGLE_STRUCT' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
