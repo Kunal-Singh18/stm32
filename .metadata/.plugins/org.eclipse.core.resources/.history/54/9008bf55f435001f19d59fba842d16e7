@@ -49,7 +49,7 @@ int main(void)
 	while(1)
 	{
 		/*3. toggle the LED pin*/
-		GPIOD_OD_R ^=LED_PIN;
+		GPIOD_OD_R |=LED_PIN;
 
 	}
 }

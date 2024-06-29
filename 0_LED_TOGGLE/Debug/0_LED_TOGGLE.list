@@ -115,11 +115,11 @@ int main(void)
 	while(1)
 	{
 		/*3. toggle the LED pin*/
-		GPIOD_OD_R |=LED_PIN;
+		GPIOD_OD_R ^=LED_PIN;
  8000210:	4b05      	ldr	r3, [pc, #20]	; (8000228 <main+0x40>)
  8000212:	681b      	ldr	r3, [r3, #0]
  8000214:	4a04      	ldr	r2, [pc, #16]	; (8000228 <main+0x40>)
- 8000216:	f443 5380 	orr.w	r3, r3, #4096	; 0x1000
+ 8000216:	f483 5380 	eor.w	r3, r3, #4096	; 0x1000
  800021a:	6013      	str	r3, [r2, #0]
  800021c:	e7f8      	b.n	8000210 <main+0x28>
  800021e:	bf00      	nop
