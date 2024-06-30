@@ -13,8 +13,8 @@
 #define GPIOD_OFFSET               (0x0C00UL)
 #define GPIOD_BASE                 (AHB1PERIPH_BASE + GPIOD_OFFSET)
 
-#define RCC_OFFSET                (0x3800UL)
-#define RCC_BASE                  (AHB1PERIPH_BASE + RCC_OFFSET)
+#define RCC_OFFSET                 (0x3800UL)
+#define RCC_BASE                   (AHB1PERIPH_BASE + RCC_OFFSET)
 
 
 #define PIN12                        (1U<<12)// used for adjusting value of pin12 in output data register.

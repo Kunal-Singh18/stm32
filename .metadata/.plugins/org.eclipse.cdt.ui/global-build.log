@@ -1,56 +1,21 @@
-17:08:38 **** Incremental Build of configuration Debug for project 1_LED_TOGGLE_STRUCT ****
+22:03:06 **** Incremental Build of configuration Debug for project 2_GPIO_OUTPUT ****
 make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "1_LED_TOGGLE_STRUCT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\1_LED_TOGGLE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_LED_TOGGLE_STRUCT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 1_LED_TOGGLE_STRUCT.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "2_GPIO_OUTPUT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\2_GPIO_OUTPUT\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_GPIO_OUTPUT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_GPIO_OUTPUT.elf
  
-arm-none-eabi-size   1_LED_TOGGLE_STRUCT.elf 
-arm-none-eabi-objdump -h -S  1_LED_TOGGLE_STRUCT.elf  > "1_LED_TOGGLE_STRUCT.list"
+arm-none-eabi-size   2_GPIO_OUTPUT.elf 
+arm-none-eabi-objdump -h -S  2_GPIO_OUTPUT.elf  > "2_GPIO_OUTPUT.list"
    text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	1_LED_TOGGLE_STRUCT.elf
+    756	      8	   1568	   2332	    91c	2_GPIO_OUTPUT.elf
 Finished building: default.size.stdout
  
-Finished building: 1_LED_TOGGLE_STRUCT.list
+Finished building: 2_GPIO_OUTPUT.list
  
-17:08:45 **** Incremental Build of configuration Debug for project 1_LED_TOGGLE_STRUCT ****
+22:03:11 **** Incremental Build of configuration Debug for project 2_GPIO_OUTPUT ****
 make -j12 all 
-arm-none-eabi-size   1_LED_TOGGLE_STRUCT.elf 
+arm-none-eabi-size   2_GPIO_OUTPUT.elf 
    text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	1_LED_TOGGLE_STRUCT.elf
+    756	      8	   1568	   2332	    91c	2_GPIO_OUTPUT.elf
 Finished building: default.size.stdout
- 
-17:09:05 **** Incremental Build of configuration Debug for project 1_LED_TOGGLE_STRUCT ****
-make -j12 all 
-arm-none-eabi-size   1_LED_TOGGLE_STRUCT.elf 
-   text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	1_LED_TOGGLE_STRUCT.elf
-Finished building: default.size.stdout
- 
-17:13:37 **** Incremental Build of configuration Debug for project 1_LED_TOGGLE_STRUCT ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "1_LED_TOGGLE_STRUCT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\1_LED_TOGGLE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_LED_TOGGLE_STRUCT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 1_LED_TOGGLE_STRUCT.elf
- 
-arm-none-eabi-size   1_LED_TOGGLE_STRUCT.elf 
-arm-none-eabi-objdump -h -S  1_LED_TOGGLE_STRUCT.elf  > "1_LED_TOGGLE_STRUCT.list"
-   text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	1_LED_TOGGLE_STRUCT.elf
-Finished building: default.size.stdout
- 
-Finished building: 1_LED_TOGGLE_STRUCT.list
- 
-17:13:57 **** Incremental Build of configuration Debug for project 1_LED_TOGGLE_STRUCT ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "1_LED_TOGGLE_STRUCT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\1_LED_TOGGLE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_LED_TOGGLE_STRUCT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 1_LED_TOGGLE_STRUCT.elf
- 
-arm-none-eabi-size   1_LED_TOGGLE_STRUCT.elf 
-arm-none-eabi-objdump -h -S  1_LED_TOGGLE_STRUCT.elf  > "1_LED_TOGGLE_STRUCT.list"
-   text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	1_LED_TOGGLE_STRUCT.elf
-Finished building: default.size.stdout
- 
-Finished building: 1_LED_TOGGLE_STRUCT.list
  
