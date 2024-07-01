@@ -22,7 +22,6 @@ int main(void)
 	GPIOD->MODER &= ~(1U<<25);
 
 
-
 	while(1)
 	{
 		GPIOD->ODR ^=LED_PIN;
