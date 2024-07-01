@@ -1,0 +1,52 @@
+
+/*this firmware aims to achieve the toggling of led connected to PD12 in a modular way by using the header file containing all the addresses which we
+ define earlier all by ourselves with help of documentations and memory mapping.
+ * */
+
+
+#include  "stm32f4xx.h"
+
+#define PIN12                        (1U<<12)
+#define LED_PIN                      PIN12
+
+#define PIN0                        (1U<<0)
+#define PUSH_BUTTON                 PIN0
+
+
+
+
+#define GPIODEN                    (1U<<3)
+#define GPIOAEN                     (1U<<0)
+
+
+
+int main(void)
+{
+	RCC->AHB1ENR |=GPIODEN;
+	RCC->AHB1ENR |=GPIOAEN;
+
+
+	GPIOD->MODER |= (1U<<24);
+	GPIOD->MODER &= ~(1U<<25);
+
+	GPIOA->MODER &= ~(1U<<0);
+	GPIOA->MODER &= ~(1U<<1);
+
+
+
+
+	while(1)
+	{
+
+		if(PUSH_BUTTON & GPIOA->IDR)
+		{
+			GPIOD->ODR |=LED_PIN;
+		}
+		else
+		{
+			GPIOD->ODR &=~(LED_PIN);
+		}
+
+	}
+
+}
