@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;2_GPIO_BSRR&apos; to &apos;3_GPIO_BSRR&apos;" description="Rename resource &apos;2_GPIO_BSRR&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/2_GPIO_BSRR" name="3_GPIO_BSRR" stamp="1719769840477" updateReferences="true"/>
+</session>
