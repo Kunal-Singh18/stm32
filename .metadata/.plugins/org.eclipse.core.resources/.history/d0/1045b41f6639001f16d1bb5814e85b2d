@@ -16,20 +16,16 @@
 
 #define CR1_TE      (1U<<3)
 #define CR1_UE      (1U<<13)
-#define SR_TXE      (1U<<7)
 
 static void uart_set_baudrate(USART_TypeDef * USARTx,uint32_t PeriphClk,uint32_t BaudRate);
 static uint16_t compute_uart_bd(uint32_t PeriphClk,uint32_t BaudRate);
-void uart2_write(int ch);
-void uart2_tx_init(void);
+
 int main(void)
 {
 
-	uart2_tx_init();
 
 	while(1)
 	{
-		uart2_write('Y');
 
 	}
 
@@ -65,18 +61,6 @@ void uart2_tx_init(void)
 	/*enable uart module*/
 	USART2->CR1 |=CR1_UE;
 
-
-}
-void uart2_write(int ch)
-{
-	/*Make sure the transmit data register is empty*/
-	while(!(USART2->SR & SR_TXE))
-	{
-		// wait until transmit data register is empty we can write to data register
-	}
-
-	/*Write to transmit data register*/
-	USART2->DR=(ch & 0xFF); // this means (ch & 11111111 ) and data register is 8 bits for storage
 
 }
 static void uart_set_baudrate(USART_TypeDef * USARTx,uint32_t PeriphClk,uint32_t BaudRate)// we will make this compatible with any uart module
