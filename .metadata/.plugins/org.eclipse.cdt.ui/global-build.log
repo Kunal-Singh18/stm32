@@ -1,21 +1,7 @@
-23:33:46 **** Incremental Build of configuration Debug for project 4_GPIO_INPUT ****
+15:06:17 **** Incremental Build of configuration Debug for project 5_UART_Tx ****
 make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "4_GPIO_INPUT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\4_GPIO_INPUT\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_GPIO_INPUT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 4_GPIO_INPUT.elf
- 
-arm-none-eabi-size   4_GPIO_INPUT.elf 
-arm-none-eabi-objdump -h -S  4_GPIO_INPUT.elf  > "4_GPIO_INPUT.list"
+arm-none-eabi-size   5_UART_Tx.elf 
    text	   data	    bss	    dec	    hex	filename
-    788	      8	   1568	   2364	    93c	4_GPIO_INPUT.elf
-Finished building: default.size.stdout
- 
-Finished building: 4_GPIO_INPUT.list
- 
-23:34:11 **** Incremental Build of configuration Debug for project 4_GPIO_INPUT ****
-make -j12 all 
-arm-none-eabi-size   4_GPIO_INPUT.elf 
-   text	   data	    bss	    dec	    hex	filename
-    788	      8	   1568	   2364	    93c	4_GPIO_INPUT.elf
+    676	      8	   1568	   2252	    8cc	5_UART_Tx.elf
 Finished building: default.size.stdout
  

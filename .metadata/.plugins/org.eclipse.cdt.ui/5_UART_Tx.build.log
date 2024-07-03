@@ -1,0 +1,10 @@
+15:06:17 **** Incremental Build of configuration Debug for project 5_UART_Tx ****
+make -j12 all 
+arm-none-eabi-size   5_UART_Tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	5_UART_Tx.elf
+Finished building: default.size.stdout
+ 
+
+15:06:17 Build Finished. 0 errors, 0 warnings. (took 251ms)
+
