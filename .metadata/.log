@@ -8739,3 +8739,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-04 15:45:00.394
 !MESSAGE Indexed '6_UART_retargeting_printf' (3 sources, 62 headers) in 2.44 sec: 3,262 declarations; 5,390 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-04 16:11:29.871
+!MESSAGE Indexed '7_UART_modular' (4 sources, 62 headers) in 0.928 sec: 3,050 declarations; 4,128 references; 5 unresolved inclusions; 30 syntax errors; 735 unresolved names (9.3%)
