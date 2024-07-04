@@ -1,10 +1,9 @@
-
-/*this firmware aims to achieve the toggling of led connected to PD12 in a modular way by using the header file containing all the addresses which we
- define earlier all by ourselves with help of documentations and memory mapping.
- * */
-
+/*
+ * this is to implement the UART communication protocol
+ * Here we are developing the UART transmit driver which aims to transfer data*/
 
 #include  "stm32f4xx.h"
+#include  <stdint.h>
 
 
 #define GPIOAEN                     (1U<<0)
