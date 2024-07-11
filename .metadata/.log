@@ -8799,3 +8799,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-10 23:04:00.704
 !MESSAGE Indexed '10_ADC_continuos' (10 sources, 67 headers) in 1.88 sec: 3,173 declarations; 4,631 references; 4 unresolved inclusions; 30 syntax errors; 730 unresolved names (8.6%)
+!SESSION 2024-07-11 11:26:14.904 -----------------------------------------------
+eclipse.buildId=Version 1.13.1
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-11 11:26:31.757
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-11 11:26:31.764
+!MESSAGE Log4j2 initialized with config file C:\Users\kunal\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-11 11:26:39.334
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-11 18:11:13.811
+!MESSAGE Indexed '11_Systick_delay' (5 sources, 9 headers) in 1.55 sec: 1,026 declarations; 1,310 references; 18 unresolved inclusions; 29 syntax errors; 768 unresolved names (25%)
