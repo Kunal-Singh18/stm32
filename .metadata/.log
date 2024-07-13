@@ -8838,3 +8838,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-13 16:26:16.388
 !MESSAGE Indexed '12_timers' (6 sources, 67 headers) in 0.951 sec: 3,441 declarations; 5,791 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-13 17:23:31.296
+!MESSAGE Indexed '13_timer_output_compare' (7 sources, 68 headers) in 0.969 sec: 3,445 declarations; 5,838 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
