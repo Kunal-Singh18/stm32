@@ -1,14 +1,22 @@
-23:02:27 **** Incremental Build of configuration Debug for project 11_Systick_delay ****
+16:47:18 **** Incremental Build of configuration Debug for project 12_timers ****
 make -j12 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "11_Systick_delay.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\11_Systick_delay\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_Systick_delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 11_Systick_delay.elf
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "12_timers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\12_timers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_timers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12_timers.elf
  
-arm-none-eabi-size   11_Systick_delay.elf 
-arm-none-eabi-objdump -h -S  11_Systick_delay.elf  > "11_Systick_delay.list"
+arm-none-eabi-size   12_timers.elf 
+arm-none-eabi-objdump -h -S  12_timers.elf  > "12_timers.list"
    text	   data	    bss	    dec	    hex	filename
-   5280	    100	   1900	   7280	   1c70	11_Systick_delay.elf
+    820	      8	   1568	   2396	    95c	12_timers.elf
 Finished building: default.size.stdout
  
-Finished building: 11_Systick_delay.list
+Finished building: 12_timers.list
+ 
+16:52:49 **** Incremental Build of configuration Debug for project 12_timers ****
+make -j12 all 
+arm-none-eabi-size   12_timers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    820	      8	   1568	   2396	    95c	12_timers.elf
+Finished building: default.size.stdout
  
