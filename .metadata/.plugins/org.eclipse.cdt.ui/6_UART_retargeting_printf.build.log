@@ -1,0 +1,17 @@
+12:54:59 **** Build of configuration Debug for project 6_UART_retargeting_printf ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "6_UART_retargeting_printf.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\6_UART_retargeting_printf\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_UART_retargeting_printf.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 6_UART_retargeting_printf.elf
+ 
+arm-none-eabi-size   6_UART_retargeting_printf.elf 
+arm-none-eabi-objdump -h -S  6_UART_retargeting_printf.elf  > "6_UART_retargeting_printf.list"
+   text	   data	    bss	    dec	    hex	filename
+   5124	    100	   1900	   7124	   1bd4	6_UART_retargeting_printf.elf
+Finished building: default.size.stdout
+ 
+Finished building: 6_UART_retargeting_printf.list
+ 
+
+12:54:59 Build Finished. 0 errors, 0 warnings. (took 502ms)
+

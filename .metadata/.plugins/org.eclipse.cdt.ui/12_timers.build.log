@@ -1,10 +1,17 @@
-16:52:49 **** Incremental Build of configuration Debug for project 12_timers ****
+12:54:55 **** Incremental Build of configuration Debug for project 12_timers ****
 make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/kunal/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "12_timers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\12_timers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_timers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12_timers.elf
+ 
 arm-none-eabi-size   12_timers.elf 
+arm-none-eabi-objdump -h -S  12_timers.elf  > "12_timers.list"
    text	   data	    bss	    dec	    hex	filename
-    820	      8	   1568	   2396	    95c	12_timers.elf
+   5280	    100	   1900	   7280	   1c70	12_timers.elf
 Finished building: default.size.stdout
  
+Finished building: 12_timers.list
+ 
 
-16:52:49 Build Finished. 0 errors, 0 warnings. (took 290ms)
+12:54:56 Build Finished. 0 errors, 0 warnings. (took 549ms)
 

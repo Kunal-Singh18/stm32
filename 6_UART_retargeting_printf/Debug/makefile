@@ -33,34 +33,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 5_UART_Tx
+BUILD_ARTIFACT_NAME := 6_UART_retargeting_printf
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-5_UART_Tx.elf \
+6_UART_retargeting_printf.elf \
 
 MAP_FILES += \
-5_UART_Tx.map \
+6_UART_retargeting_printf.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-5_UART_Tx.list \
+6_UART_retargeting_printf.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 5_UART_Tx.elf secondary-outputs
+main-build: 6_UART_retargeting_printf.elf secondary-outputs
 
 # Tool invocations
-5_UART_Tx.elf 5_UART_Tx.map: $(OBJS) $(USER_OBJS) C:\Users\kunal\STM32\5_UART_Tx\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "5_UART_Tx.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\5_UART_Tx\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_UART_Tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+6_UART_retargeting_printf.elf 6_UART_retargeting_printf.map: $(OBJS) $(USER_OBJS) C:\Users\kunal\STM32\6_UART_retargeting_printf\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "6_UART_retargeting_printf.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\kunal\STM32\6_UART_retargeting_printf\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_UART_retargeting_printf.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -69,14 +69,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-5_UART_Tx.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "5_UART_Tx.list"
+6_UART_retargeting_printf.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "6_UART_retargeting_printf.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 5_UART_Tx.elf 5_UART_Tx.list 5_UART_Tx.map default.size.stdout
+	-$(RM) 6_UART_retargeting_printf.elf 6_UART_retargeting_printf.list 6_UART_retargeting_printf.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

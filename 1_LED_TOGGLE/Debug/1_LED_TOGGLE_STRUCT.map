@@ -829,24 +829,24 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x0000000000000013       0x19 ./Startup/startup_stm32f407vgtx.o
 
-.debug_macro    0x0000000000000000      0xfd0
- .debug_macro   0x0000000000000000       0xd5 ./Src/main.o
- .debug_macro   0x00000000000000d5      0xaae ./Src/main.o
- .debug_macro   0x0000000000000b83       0x22 ./Src/main.o
- .debug_macro   0x0000000000000ba5       0x8e ./Src/main.o
- .debug_macro   0x0000000000000c33       0x51 ./Src/main.o
- .debug_macro   0x0000000000000c84      0x103 ./Src/main.o
- .debug_macro   0x0000000000000d87       0x6a ./Src/main.o
- .debug_macro   0x0000000000000df1      0x1df ./Src/main.o
+.debug_macro    0x0000000000000000      0xfac
+ .debug_macro   0x0000000000000000       0xb1 ./Src/main.o
+ .debug_macro   0x00000000000000b1      0xaae ./Src/main.o
+ .debug_macro   0x0000000000000b5f       0x22 ./Src/main.o
+ .debug_macro   0x0000000000000b81       0x8e ./Src/main.o
+ .debug_macro   0x0000000000000c0f       0x51 ./Src/main.o
+ .debug_macro   0x0000000000000c60      0x103 ./Src/main.o
+ .debug_macro   0x0000000000000d63       0x6a ./Src/main.o
+ .debug_macro   0x0000000000000dcd      0x1df ./Src/main.o
 
 .debug_line     0x0000000000000000      0x49a
  .debug_line    0x0000000000000000      0x41f ./Src/main.o
  .debug_line    0x000000000000041f       0x7b ./Startup/startup_stm32f407vgtx.o
 
-.debug_str      0x0000000000000000     0x3e52
- .debug_str     0x0000000000000000     0x3e23 ./Src/main.o
-                                       0x3f87 (size before relaxing)
- .debug_str     0x0000000000003e23       0x2f ./Startup/startup_stm32f407vgtx.o
+.debug_str      0x0000000000000000     0x3d3e
+ .debug_str     0x0000000000000000     0x3d0f ./Src/main.o
+                                       0x3e73 (size before relaxing)
+ .debug_str     0x0000000000003d0f       0x2f ./Startup/startup_stm32f407vgtx.o
                                          0x57 (size before relaxing)
 
 .debug_frame    0x0000000000000000       0x58
