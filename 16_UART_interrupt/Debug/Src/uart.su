@@ -1,0 +1,9 @@
+C:/Users/kunal/STM32/chip_headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+../Src/uart.c:26:5:__io_putchar	16	static
+../Src/uart.c:32:6:uart2_txrx_init	8	static
+../Src/uart.c:77:6:uart2_tx_interrupt_init	8	static
+../Src/uart.c:116:6:uart2_tx_init	8	static
+../Src/uart.c:150:6:uart2_read	4	static
+../Src/uart.c:160:6:uart2_write	16	static
+../Src/uart.c:172:13:uart_set_baudrate	24	static
+../Src/uart.c:176:17:compute_uart_bd	16	static

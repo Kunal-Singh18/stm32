@@ -1,14 +1,7 @@
-07:32:54 **** Incremental Build of configuration Debug for project 15_exti_interrupt ****
+18:01:18 **** Incremental Build of configuration Debug for project 16_UART_interrupt ****
 make -j12 all 
-arm-none-eabi-size   15_exti_interrupt.elf 
+arm-none-eabi-size   16_UART_interrupt.elf 
    text	   data	    bss	    dec	    hex	filename
-   5424	    100	   1900	   7424	   1d00	15_exti_interrupt.elf
-Finished building: default.size.stdout
- 
-07:32:57 **** Incremental Build of configuration Debug for project 15_exti_interrupt ****
-make -j12 all 
-arm-none-eabi-size   15_exti_interrupt.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5424	    100	   1900	   7424	   1d00	15_exti_interrupt.elf
+   5360	    100	   1900	   7360	   1cc0	16_UART_interrupt.elf
 Finished building: default.size.stdout
  
