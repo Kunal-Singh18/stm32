@@ -1,0 +1,46 @@
+/*
+ * This project is a sub project under UART communication driver development
+ * Here we implement  a retargeting printf  exercise where we retarget the output of printf from console to our UART
+ * */
+
+
+#include  "stm32f4xx.h"
+#include  <stdint.h>
+#include  <stdio.h>
+#include  "uart.h"
+#include  "adc.h"
+#include  "systick.h"
+#include  "timer.h"
+#include  "exti.h"
+
+
+/*
+ * while perfoming this exercise we should connect jumper from PD12 TO PA8
+ * refer nucleo guide for the pins
+ * and use timestamp as live expression*/
+
+int timestamp=0;
+int main(void)
+{
+	pa0_exti_init();
+
+	while(1)
+	{
+
+	}
+
+}
+static void exti_callback(void)
+{
+	printf("button is pressed");
+}
+void EXTI0_IRQHandler(void)// exactly same name as defined in vector table.
+{
+	//checking line of interrupt
+	if(EXTI->PR & LINE0)// useful in case when multiple lines have same IRQ
+	{
+		/*clear PR flag*/
+		EXTI->PR &=~LINE0;
+		//perform something.
+	}
+}
