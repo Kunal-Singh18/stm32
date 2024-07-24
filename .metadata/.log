@@ -8928,3 +8928,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-24 07:41:36.787
 !MESSAGE Indexed '16_UART_interrupt' (4 sources, 65 headers) in 1.28 sec: 3,419 declarations; 5,690 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-24 22:09:54.335
+!MESSAGE Indexed '17_UART_RXNE_interrupt' (4 sources, 61 headers) in 0.523 sec: 2,891 declarations; 4,051 references; 7 unresolved inclusions; 30 syntax errors; 725 unresolved names (9.5%)
