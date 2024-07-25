@@ -1,0 +1,5 @@
+C:/Users/kunal/STM32/chip_headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_EnableIRQ	2
+../Src/adc.c:17:6:pf3_adc_interrupt_init	1
+../Src/adc.c:50:6:pf3_adc_init	1
+../Src/adc.c:78:6:start_conversion	1
+../Src/adc.c:89:10:adc_read	1
