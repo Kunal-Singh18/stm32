@@ -9147,3 +9147,6 @@ java.lang.Exception: Resource '/11_systick_interrupt' does not exist.
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-25 14:37:36.841
+!MESSAGE Indexed '20_timer_interrupt' (7 sources, 11 headers) in 0.374 sec: 1,034 declarations; 1,413 references; 18 unresolved inclusions; 29 syntax errors; 767 unresolved names (24%)
